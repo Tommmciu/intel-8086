@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Paweł Malina" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <title>Intel 8086</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./main.js"></script>
+
+</head>
+
+<body>
+  <main>
+    <div id="left">
+      <h3>Rejestry</h3>
+      <div>
+        <span>AX</span>
+        <input type="text" name="" id="ax" value="11111" style="display: none;" />
+        <span id="spanax">#2b67</span class="span">
+      </div>
+      <div>
+        <span>BX</span>
+        <input type="text" name="" id="bx" value="33333" style="display: none;" />
+        <span id="spanbx">#8235</span>
+      </div>
+      <div>
+        <span>CX</span>
+        <input type="text" name="" id="cx" value="567845" style="display: none;" />
+        <span id="spancx">#8aa25</span>
+      </div>
+      <div>
+        <span>DX</span>
+        <input type="text" name="" id="dx" value="2365998" style="display: none;" />
+        <span id="spandx">#241a2e</span>
+      </div>
+    </div>
+    <div id="right">
+      <h3>Rozkazy</h3>
+      <div>
+        <span>Rozkazy</span>
+        <select name="" id="comand">
+          <option value="MOV">MOV</option>
+          <option value="SWAP">SWAP</option>
+          <option value="ADD">ADD</option>
+          <option value="SUB">SUB</option>
+        </select>
+      </div>
+      <div>
+        <span>Rejestr 1.</span>
+        <select name="" id="firstRegister">
+          <option selected="selected" id="fax" value="ax">AX</option>
+          <option id="fbx" value="bx" style="display: none;">BX</option>
+          <option id="fcx" value="cx">CX</option>
+          <option id="fdx" value="dx">DX</option>
+        </select>
+      </div>
+      <div>
+        <span>Rejestr 2.</span>
+        <select name="" id="secondRegister">
+          <option id="sax" value="ax" style="display: none;">AX</option>
+          <option selected="selected" id="sbx" value="bx">BX</option>
+          <option id="scx" value="cx">CX</option>
+          <option id="sdx" value="dx">DX</option>
+        </select>
+      </div>
+      <div>
+        <button id="run">Wykonaj</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

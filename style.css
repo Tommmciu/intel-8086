@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+button,
+select {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main>div {
+  margin: 10px;
+  border: 2px;
+  padding-inline: 10px;
+  border-color: black;
+  border-style: solid;
+  padding-bottom: 10px;
+}
+
+#right,
+#left {
+  /* height: 100%; */
+  width: 300px;
+  min-width: 300px;
+}
+
+#left>div,
+#right>div {
+  margin-top: 10px;
+}
+
+#left div input {
+  margin-left: 10px;
+}
+
+#right div select {
+  margin-left: 10px;
+  width: 100px;
+}
+
+#right div span {
+  width: 80px;
+  display: inline-block;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#spanax,
+#spanbx,
+#spancx,
+#spandx {
+  background-color: rgba(255, 235, 205, 0.589);
+  padding: 2px;
+  border-radius: 6px;
+}
